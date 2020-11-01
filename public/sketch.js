@@ -5,7 +5,7 @@ function setup() {
     background(50);
 
     //connect to server
-    socket = io.connect("http://localhost:3000");
+    socket = io.connect();
 
     //receiving data and then calling newDrawing
     socket.on("mouse", newDrawing);
